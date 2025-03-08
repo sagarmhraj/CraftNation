@@ -1,28 +1,25 @@
-/* Global Styles */
 body {
   background-color: #f3f5f7;
   margin: 0;
   font-family: Arial, sans-serif;
 }
 
-/* Container */
 .container {
   display: flex;
-  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  flex-wrap: wrap;
   gap: 20px;
   padding: 10px;
   min-height: 100vh;
 }
 
-/* Sidebar */
 .sidebar {
-  width: 100%; /* Full width on small screens */
-  max-width: 250px; /* Fixed width on larger screens */
+  width: 100%;
+  max-width: 250px;
   padding: 10px;
   background: #f3f5f7;
   border-right: 2px solid #ccc;
   border-radius: 10px 0 0 10px;
-  order: 1; /* Ensure sidebar comes first on small screens */
+  order: 1;
 }
 
 .sidebar-menu {
@@ -55,7 +52,6 @@ body {
   color: #555;
 }
 
-/* Sidebar Boxes */
 .box {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   margin-bottom: 10px;
@@ -98,20 +94,19 @@ body {
 .filters {
   background-color: #f3f5f7;
   padding: 15px 10px;
-  width: 100%; /* Full width on small screens */
-  max-width: 200px; /* Fixed width on larger screens */
-  order: 3; /* Ensure filters come last on small screens */
+  width: 100%;
+  max-width: 200px;
+  order: 3;
 }
 
 /* Main Content */
 .main-content {
   flex-grow: 1;
   padding: 20px;
-  min-width: 300px; /* Adjusted for smaller screens */
-  order: 2; /* Ensure main content comes second */
+  min-width: 300px;
+  order: 2;
 }
 
-/* Table Wrapper */
 .table-wrapper {
   margin-top: 20px;
   overflow-x: auto;
@@ -120,7 +115,6 @@ body {
   border: 2px solid #ccc;
 }
 
-/* Table Styles */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -156,7 +150,6 @@ table tbody tr {
   background-color: #ffffff;
 }
 
-/* Status Label */
 .status {
   display: inline-block;
   padding: 9px 9px;
@@ -170,7 +163,7 @@ table tbody tr {
 
 .status-wrapper {
   position: relative;
-  display: inline-block; /* Keeps the wrapper only as wide as the status elements */
+  display: inline-block;
 }
 
 .status {
@@ -180,11 +173,11 @@ table tbody tr {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #0d34b5; /* Adjust as needed */
+  background-color: #0d34b5;
   color: white;
   font-size: 14px;
   font-weight: bold;
-  position: relative; /* Keeps it in normal flow */
+  position: relative;
 }
 
 .secondary-status {
@@ -224,8 +217,8 @@ h2 {
 }
 
 #project {
-  width: 100%; /* Full width on small screens */
-  max-width: 160px; /* Fixed width on larger screens */
+  width: 100%;
+  max-width: 160px;
   height: 27px;
   border: 1px solid black;
   padding: 1px 16px;
@@ -251,23 +244,22 @@ h2 {
   gap: 8px;
 }
 
-/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .container {
-    flex-direction: column; /* Stack elements vertically on small screens */
+    flex-direction: column;
   }
 
   .sidebar,
   .filters {
-    max-width: 100%; /* Full width on small screens */
+    max-width: 100%;
   }
 
   .main-content {
-    min-width: 100%; /* Full width on small screens */
+    min-width: 100%;
   }
 
   .filters {
-    order: 3; /* Ensure filters come last */
+    order: 3;
   }
 }
 
@@ -277,11 +269,11 @@ h2 {
   }
 
   .sidebar {
-    max-width: 200px; /* Adjust sidebar width for medium screens */
+    max-width: 200px;
   }
 
   .filters {
-    max-width: 180px; /* Adjust filters width for medium screens */
+    max-width: 180px;
   }
 }
 
@@ -291,10 +283,10 @@ h2 {
   }
 
   .sidebar {
-    max-width: 250px; /* Fixed width for larger screens */
+    max-width: 250px;
   }
 
   .filters {
-    max-width: 200px; /* Fixed width for larger screens */
+    max-width: 200px;
   }
 }

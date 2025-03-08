@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/Navbar.css';
-import { IoMenu,  IoSettingsSharp, IoChevronDown, IoPersonAdd, IoKeySharp } from "react-icons/io5";
-import { FaSearch } from "react-icons/fa"; // ✅ Corrected Import
+import { IoMenu, IoSettingsSharp, IoChevronDown, IoPersonAdd, IoKeySharp } from "react-icons/io5";
+import { FaSearch } from "react-icons/fa";
 import { HiOutlineQuestionMarkCircle } from "react-icons/hi";
 import { RxCross1 } from "react-icons/rx";
 import { IoIosNotifications } from "react-icons/io";
@@ -14,9 +14,9 @@ const Navbar = () => {
           <ul>
             <li><IoMenu /></li>
             <li className='create'>Create</li>
-            <li>Recent <IoChevronDown/></li>
-            <li>Favorite<IoChevronDown/> </li>
-            <li>Spaces<IoChevronDown/> </li>
+            <li>Recent <IoChevronDown /></li>
+            <li>Favorite<IoChevronDown /> </li>
+            <li>Spaces<IoChevronDown /> </li>
           </ul>
         </div>
 

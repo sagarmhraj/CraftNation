@@ -5,7 +5,7 @@ import "../css/home.css";
 const Home = () => {
   return (
     <div className="container">
-      {/* Sidebar */}
+
       <aside className="sidebar">
         <div className="box">
           <ul>
@@ -43,7 +43,7 @@ const Home = () => {
               <a href="#">
                 <i className="fas fa-play-circle"></i>
                 <span className="menu-text">Session Replay</span>
-                {/* <span className="dropdown-icon">▼</span> */}
+
               </a>
             </li>
             <li>
@@ -67,7 +67,7 @@ const Home = () => {
       </aside>
 
 
-      {/* Main Content */}
+
       <main className="main-content">
         <h1>All Content</h1>
         <p>27 items</p>
